@@ -1,108 +1,124 @@
 /* FONT STYLING */
-body {
-    font-family: 'Fjalla One', sans-serif;
-    color: #4e342e
-}
+    body {
+        font-family: 'Fjalla One', sans-serif;
+        color: #4e342e
+    }
 
-.project-header {
-    color: #1498D5;
-}
+    .project-header {
+        color: #1498D5;
+    }
 
-.about-me {
-    font-family: 'Open Sans', sans-serif;
-}
+    .about-me {
+        font-family: 'Open Sans', sans-serif;
+    }
 
 /* BACKGROUND */
-.page-footer {
-    background-color: #1498D5;
-}
+    .page-footer {
+        background-color: #1498D5;
+        padding-top: 0px;
+    }
 
 .dark-background {
     background-color: rgba(0,0,0, 0.2);
 }
 
 /* MARGIN/PADDING STYLING */
-.about-section {
-    height: 400px;
-}
+    .about-section {
+        height: 400px;
+    }
 
-.margin-x {
-    margin-left: auto;
-    margin-right: auto;
-}
+    .margin-x {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.margin-b {
-    margin-bottom: 0px;
-}
+    .margin-b {
+        margin-bottom: 0px;
+    }
 
-.margin-t  {
-    margin-top: 185px;
-}
+    .margin-t  {
+        margin-top: 185px;
+    }
 
-.contact-btn {
-    margin: 25px 15px;
-}
+    .contact-btn {
+        margin: 25px 15px;
+    }
 
-.padding-y {
-    padding-top: auto;
-    padding-bottom: auto;
-}
+    .padding-y {
+        padding-top: auto;
+        padding-bottom: auto;
+    }
 
 /* IMAGES */
-.portfolio-img {
-    opacity: .85;
-}
+    .portfolio-img {
+        opacity: .85;
+    }
 
-.card-image img:hover {
-    opacity: 1;
-}
+    .card-image img:hover {
+        opacity: 1;
+    }
 
-#logo-img {
-    width: 300px;
-    height: auto;
-}
+    #logo-img {
+        width: 300px;
+        height: auto;
+    }
 
-#profile-img {
-    padding: none;
-    width: 100%;
-}
+    #profile-img {
+        padding: none;
+        width: 100%;
+    }
 
 /* SIZING */
 
-.parallax-container {
-    height: 620px;
-}
+    .parallax-container {
+        height: 620px;
+    }
 
-.parallax-footer {
-    height: 510px;
-}
+    .parallax-footer {
+        height: 510px;
+    }
 
 /* BACK-TO-TOP BUTTON */
-#back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 9999;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    line-height: 30px;
-    background-color: #1498D5;
-    color: white;
-    cursor: pointer;
-    border: 0;
-    border-radius: 2px;
-    transition: opacity 0.2s ease-out;
-    opacity: 0;
-}
-#back-to-top:hover {
-    background-color: #1A758E;
-}
-#back-to-top.show {
-    opacity: 1;
-}
+    #back-to-top {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 9999;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 30px;
+        background-color: #1498D5;
+        color: white;
+        cursor: pointer;
+        border: 0;
+        border-radius: 2px;
+        transition: opacity 0.2s ease-out;
+        opacity: 0;
+    }
+    #back-to-top:hover {
+        background-color: #1A758E;
+    }
+    #back-to-top.show {
+        opacity: 1;
+    }
 
 /* INPUT FIELD */
+    #contact {
+        width: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 50px;
+        border: 2px solid #4E342E;
+        background-color: #E6CAA3; 
+    }
+    @media only screen and (max-width: 600px) {
+        #contact {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     /* Label and input field color */
         .input-field label {
             color: #4e342e !important;

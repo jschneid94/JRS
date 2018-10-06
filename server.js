@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 
-require("./routes/apiRoutes")(app);
+require("./routes/emailRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 app.listen(PORT, function() {

@@ -4,6 +4,7 @@
   "description": "The third iteration of my portfolio page, using mvc architecture.",
   "main": "server.js",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "nodemailer": "^4.6.8",
