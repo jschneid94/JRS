@@ -1,13 +1,14 @@
 var nodemailer = require("nodemailer");
 var smtpTransport = require('nodemailer-smtp-transport');
+var user = require("../email");
 
 module.exports = function(app) {
 
     var transporter = nodemailer.createTransport(smtpTransport({
         service: 'Gmail',
         auth: {
-          user: 'jschneid94@gmail.com',
-          pass: '####'
+          user: user.email,
+          pass: user.password
         }
     }));
 
@@ -22,12 +23,13 @@ module.exports = function(app) {
     // });
 
     app.post("/send-email", function(req, res) {
+        console.log(req.body.message);
         let mailOptions = {
-            from: `${req.body.name} <${req.body.email}>`, // sender address
-            to: `jschneid94@gmail.com`, // list of receivers
-            subject: `Portfolio Visitor`, // Subject line
-            text: req.body.message, // plain text body
-            html: `<p>${req.body.message}</p>` // html body
+            from: `${req.body.email}`, // sender address
+            to: user.email, // receiver address
+            subject: `${req.body.name}`, // Sender's name as subject line
+            text: `${req.body.message}`, // Message body
+            replyTo: `${req.body.email}`
         };
 
         // send mail with defined transport object
