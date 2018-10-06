@@ -1,14 +1,14 @@
 var nodemailer = require("nodemailer");
 var smtpTransport = require('nodemailer-smtp-transport');
-var user = require("../email");
+// var user = require("../email");
 
 module.exports = function(app) {
 
     var transporter = nodemailer.createTransport(smtpTransport({
         service: 'Gmail',
         auth: {
-          user: user.email,
-          pass: user.password
+          user: process.env.email,
+          pass: process.env.password
         }
     }));
 
@@ -17,7 +17,7 @@ module.exports = function(app) {
         console.log(req.body.message);
         let mailOptions = {
             from: `${req.body.email}`, // sender address
-            to: user.email, // receiver address
+            to: process.env.email, // receiver address
             subject: `${req.body.name}`, // Sender's name as subject line
             text: `${req.body.message}`, // Message body
             replyTo: `${req.body.email}`
