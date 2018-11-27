@@ -1,7 +1,6 @@
 /* FONT STYLING */
     body {
         font-family: 'Fjalla One', sans-serif;
-        color: #4e342e
     }
 
     .project-header {
@@ -18,9 +17,12 @@
         padding-top: 0px;
     }
 
-.dark-background {
-    background-color: rgba(0,0,0, 0.2);
-}
+    .dark-background {
+        background-color: rgba(0,0,0, 0.2);
+    }
+    .light-background {
+        opacity: 0.85;
+    }
 
 /* MARGIN/PADDING STYLING */
     .about-section {

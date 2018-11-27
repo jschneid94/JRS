@@ -1,6 +1,6 @@
 var nodemailer = require("nodemailer");
 var smtpTransport = require('nodemailer-smtp-transport');
-// var user = require("../email");
+require("dotenv");
 
 module.exports = function(app) {
 
@@ -25,6 +25,7 @@ module.exports = function(app) {
 
         // send mail with defined transport object
         transporter.sendMail(mailOptions, (error, info) => {
+            console.log(mailOptions);
             if (error) {
                 return console.log(error);
             }
