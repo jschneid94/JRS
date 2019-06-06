@@ -60,6 +60,9 @@
         position: relative;
         top: -50px;
     }
+    ul #navDropdown li a {
+        color: #1498D5;
+    }
 
 /* IMAGES */
     .portfolio-img {
