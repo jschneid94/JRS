@@ -23,6 +23,12 @@
     .light-background {
         opacity: 0.85;
     }
+    .nav-wrapper {
+        background-color: #1498D5;
+    }
+    blockquote {
+        border-left: 5px solid #1498D5;
+    }
 
 /* MARGIN/PADDING STYLING */
     .about-section {
