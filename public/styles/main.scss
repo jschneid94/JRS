@@ -1,0 +1,180 @@
+$primary_color: #1498D5;
+$secondary_color: #4e342e;
+$header_font: 'Fjalla One', sans-serif;
+$body_font: 'Open Sans', sans-serif;
+
+/* FONT STYLING */
+body {
+  font-family: $header_font;
+}
+
+.project-header {
+  color: $primary_color;
+}
+
+.about-me {
+  font-family: $body_font;
+}
+
+/* BACKGROUND */
+.page-footer {
+  background-color: $primary_color;
+  padding-top: 0px;
+}
+
+.dark-background {
+  background-color: rgba(0,0,0, 0.2);
+}
+.light-background {
+  opacity: 0.85;
+}
+.nav-wrapper {
+  background-color: $primary_color;
+}
+blockquote {
+  border-left: 5px solid $primary_color;
+}
+
+/* MARGIN/PADDING STYLING */
+.about-section {
+  height: 400px;
+}
+
+.margin-x {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-b {
+  margin-bottom: 0px;
+}
+
+.margin-t  {
+  margin-top: 185px;
+}
+
+.contact-btn {
+  margin: 25px 15px;
+}
+
+.padding-y {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+#aboutMe, #myWork, #contactMe {
+  position: relative;
+  top: -50px;
+}
+ul #navDropdown li a {
+  color: $primary_color;
+}
+
+/* IMAGES */
+.portfolio-img {
+  opacity: .85;
+}
+
+.card-image img:hover {
+  opacity: 1;
+}
+
+#logo-img {
+  width: 300px;
+  height: auto;
+}
+
+#profile-img {
+  padding: none;
+  width: 100%;
+}
+
+/* SIZING */
+
+.parallax-container {
+  height: 620px;
+}
+
+.parallax-footer {
+  height: 510px;
+}
+
+/* BACK-TO-TOP BUTTON */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background-color: $primary_color;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+#back-to-top:hover {
+  background-color: #1A758E;
+}
+#back-to-top.show {
+  opacity: 1;
+}
+
+/* INPUT FIELD */
+#contact {
+  width: 500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  border: 2px solid $secondary_color;
+  background-color: #E6CAA3; 
+}
+@media only screen and (max-width: 600px) {
+  #contact {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+/* Label and input field color */
+  .input-field label {
+      color: $secondary_color !important;
+  }
+  .input-field input[type=text] {
+      border-bottom: 1px solid $secondary_color !important;
+      box-shadow: 0 1px 0 0 $secondary_color !important;
+  }
+  .input-field input[type=email] {
+      border-bottom: 1px solid $secondary_color !important;
+      box-shadow: 0 1px 0 0 $secondary_color !important;
+  }
+  .materialize-textarea {
+      border-bottom: 1px solid $secondary_color !important;
+      box-shadow: 0 1px 0 0 $secondary_color !important;
+  }
+/* Focused label and input field color */
+  .input-field input[type=text]:focus {
+      color: $secondary_color !important;
+  }
+  .input-field input[type=text]:focus {
+      border-bottom: 1px solid $secondary_color !important;
+      box-shadow: 0 1px 0 0 $secondary_color !important;
+  }
+  .input-field input[type=email]:focus {
+      border-bottom: 1px solid $secondary_color !important;
+      box-shadow: 0 1px 0 0 $secondary_color !important;
+  }
+  .input-field .prefix.active {
+      color: $secondary_color;
+  }
+  .input-field input[type=text].invalid {
+      border-bottom: 1px solid #b22201 !important;
+      box-shadow: 0 1px 0 0 #b22201 !important;
+  }
+/* Submit Button */
+  #submit {
+      background-color: $secondary_color; 
+  }
